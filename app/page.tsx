@@ -1,15 +1,15 @@
 import Link from "next/link";
-import CanvasAnimation from "./components/menu/CanvasAnimation/CanvasAnimation";
 
 export default function Home() {
   return (
-    <div >
-      <div className="relative">
-        <h1 style={{ position: "relative", zIndex: 1 }}>Welcome!</h1>
-        <h1>Home Page</h1>
-        <Link href="/portfolio">Portfolio</Link>
+    <div>
+      <div className="container mx-auto">
+        <div className="text-center bg-[#fff]/30 rounded-lg border-1 border-[#90919C]/30 p-4 backdrop-blur-md text-black">
+          <h1 className="text-4xl font-bold">Welcome!</h1>
+          <h1>Home Page</h1>
+          <Link href="/portfolio">Portfolio</Link>
+        </div>
       </div>
-
     </div>
   );
 }
