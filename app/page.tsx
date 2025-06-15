@@ -6,10 +6,10 @@ export default function Home() {
     <div >
       <div className="relative">
         <h1 style={{ position: "relative", zIndex: 1 }}>Welcome!</h1>
-        {/* <h1>Home Page</h1>
-        <Link href="/portfolio">Portfolio</Link> */}
+        <h1>Home Page</h1>
+        <Link href="/portfolio">Portfolio</Link>
       </div>
-        <CanvasAnimation />
+
     </div>
   );
 }
