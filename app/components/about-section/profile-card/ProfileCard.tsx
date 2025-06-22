@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Image from "next/image"
 import ProfileImg from "../../../../public/images/profile-img.jpg"
 import SocialButton from "../../common-component/social-button/SocialButton"
@@ -16,9 +16,11 @@ const ProfileCard = ({ classNameprops }: props) => {
                         <Image className="rounded-full " src={ProfileImg} width={250} height={250} alt="profile" />
                     </div>
                     <div className="text-center w-full pb-6 border-b border-[var(--normal-text)]/10">
-                        <h1 className="text-[var(--normal-text)] text-[48px] font-extrabold">Tomal M.</h1>
-                        <h2 className="text-[var(--normal-text)] text-[16px] font-regular">Front-End Developer | UX UI Designer</h2>
-                        <button>Download</button>
+                        <h1 className="text-[var(--normal-text)] text-[56px] font-extrabold">Tomal M.</h1>
+                        <h2 className="text-[var(--normal-text)] text-[18px] font-regular">Front-End Developer | UX UI Designer</h2>
+                        <div className="flex justify-center gap-4 pt-5">
+                            <SocialButton icon='line-md:downloading-loop' iconColor="bg-[#fff]/20 " hoverColor='!bg-[#3E84DE] !text-white w-auto' text='Download CV' link='https://drive.google.com/file/d/1WB5rNB7XLhwJyE8M03b1njpPOmc_1BBb/view' />
+                        </div>
                     </div>
                     <div className="flex gap-4 items-center" >
                         <SocialButton icon='bxl:facebook' iconColor="bg-[#1877f2]" hoverColor='hover:bg-[#1877f2]' text='Facebook' link='https://www.facebook.com/' />

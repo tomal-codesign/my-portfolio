@@ -1,13 +1,17 @@
 import AboutCard from "./about-card/AboutCard"
 import ProfileCard from "./profile-card/ProfileCard"
-
-const AboutSection = () => {
+type props = {
+    className?: string
+}
+const AboutSection = ({ className }: props) => {
     return (
         <>
-            <div className="container mx-auto">
-                <div className="grid grid-cols-7 gap-4">
-                    <ProfileCard classNameprops="col-span-3" />
-                    <AboutCard classNameprops="col-span-3" />
+            <div className={`pt-8 ${className}`}>
+                <div className="container mx-auto px-4">
+                    <div className="grid grid-cols-7 gap-6">
+                        <ProfileCard classNameprops="col-span-7 lg:col-span-3 " />
+                        <AboutCard classNameprops="col-span-7 lg:col-span-4" />
+                    </div>
                 </div>
             </div>
         </>
