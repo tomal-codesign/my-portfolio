@@ -20,8 +20,8 @@ const WorkingEducation = () => {
                             <h1 className="text-[var(--normal-text)] text-[40px] font-extrabold">Education</h1>
                             <p className="pt-1 text-[var(--normal-text)] text-md">Where academic foundation meets real-world implementation</p>
                             <div className='flex flex-col lg:pt-10 pt-6 gap-4'>
-                                <EducationCard icon="material-symbols-light:home-work-outline" company="Sonargaon University" designation="B.Sc. in CSE" duration="Jan 2023 - Present" />
-                                <EducationCard icon="material-symbols-light:home-work-outline" company="Rangpur Polytechnic Institute" designation="Diploma (CSE)" duration="Jan 2023 - Present" />
+                                <EducationCard icon="fluent-mdl2:education" company="Sonargaon University" designation="B.Sc. in CSE" duration="Jan 2023 - Present" />
+                                <EducationCard icon="fluent-mdl2:education" company="Rangpur Polytechnic Institute" designation="Diploma (CSE)" duration="Jan 2023 - Present" />
                             </div>
                         </div>
                     </div>
