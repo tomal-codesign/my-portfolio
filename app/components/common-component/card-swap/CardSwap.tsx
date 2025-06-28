@@ -35,7 +35,7 @@ export const Card = forwardRef<HTMLDivElement, CardProps>(
         <div
             ref={ref}
             {...rest}
-            className={`absolute w-[200px] h-[300px] top-1/2 left-1/2 rounded-xl bg-black [transform-style:preserve-3d] [will-change:transform] [backface-visibility:hidden] ${customClass ?? ""} ${rest.className ?? ""}`.trim()}
+            className={`absolute w-[200px] h-[200px] top-1/2 left-1/2 rounded-xl bg-black [transform-style:preserve-3d] [will-change:transform] [backface-visibility:hidden] ${customClass ?? ""} ${rest.className ?? ""}`.trim()}
         />
     )
 );
@@ -76,7 +76,7 @@ const placeNow = (el: HTMLElement, slot: Slot, skew: number) =>
 
 const CardSwap: React.FC<CardSwapProps> = ({
     width = 600,
-    height = 420,
+    height = 360,
     cardDistance = 50,
     verticalDistance = 50,
     delay = 5000,
@@ -236,7 +236,7 @@ const CardSwap: React.FC<CardSwapProps> = ({
     return (
         <div
             ref={container}
-            className="absolute bottom-0 right-0 transform translate-x-[5%] translate-y-[20%] origin-bottom-right perspective-[900px] overflow-visible max-[768px]:translate-x-[25%] max-[768px]:translate-y-[25%] max-[768px]:scale-[0.75] max-[480px]:translate-x-[25%] max-[480px]:translate-y-[25%] max-[480px]:scale-[0.55]"
+            className="absolute bottom-0 right-[110px] top-[75px] transform translate-x-[5%] translate-y-[20%] origin-bottom-right perspective-[900px] overflow-visible max-[768px]:translate-x-[25%] max-[768px]:translate-y-[25%] max-[768px]:scale-[0.75] max-[480px]:translate-x-[25%] max-[480px]:translate-y-[25%] max-[480px]:scale-[0.55]"
             style={{ width, height }}
         >
             {rendered}
