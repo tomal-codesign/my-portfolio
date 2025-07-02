@@ -36,3 +36,32 @@ body {
     z-index: 9;
   }
 }
+
+.swiper-pagination {
+  position: initial !important;
+  height: 50px;
+  padding-top: 20px;
+}
+
+.swiper-pagination-bullet {
+  width: 14px !important;
+  height: 14px !important;
+  background: var(--normal-text) !important;
+  opacity: .5;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  position: relative;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active::after {
+  content: "";
+  background: transparent;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  border: 1px solid var(--normal-text);
+  border-radius: 50%;
+}

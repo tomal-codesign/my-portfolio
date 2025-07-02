@@ -12,9 +12,6 @@ export default function Home() {
       <WorkingEducation />
       <Services />
       <RecentWork />
-     {/* <AboutSection />
-      <Weapons />
-      <WorkingEducation /> */}
     </div>
   );
 }
