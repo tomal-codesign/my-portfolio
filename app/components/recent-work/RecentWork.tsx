@@ -15,18 +15,16 @@ import { Pagination } from 'swiper/modules';
 const RecentWork = () => {
 
     return (
-        <section className="px-4">
-            <div className="pb-22 pt-8 container mx-auto">
-                <h1 className="text-[var(--normal-text)] text-[32px] md:text-[40px] font-extrabold">
+        <section>
+            <div className="pb-8 pt-8 px-4 container mx-auto">
+                <h1 className="text-[var(--normal-text)] text-[20px] lg:text-[40px] font-extrabold">
                     Portfolio Highlights
                 </h1>
-                <p className="pt-1 text-[var(--normal-text)] text-md">
+                <p className="pt-1 text-[var(--normal-text)] text-sm lg:text-md">
                     A collection of ideas brought to life through craft.
                 </p>
-                <div className="pt-8">
+                <div className="lg:pt-8 pt-4">
                     <Swiper
-                        slidesPerView={3}
-                        spaceBetween={30}
                         pagination={{
                             clickable: true,
                         }}
@@ -34,15 +32,12 @@ const RecentWork = () => {
                         breakpoints={{
                             640: {
                                 slidesPerView: 1,
-                                spaceBetween: 20,
                             },
                             768: {
                                 slidesPerView: 2,
-                                spaceBetween: 40,
                             },
                             1024: {
                                 slidesPerView: 3,
-                                spaceBetween: 50,
                             },
                         }}
                         className="mySwiper">
@@ -55,17 +50,6 @@ const RecentWork = () => {
                                 </SwiperSlide>
                             ))}
                     </Swiper>
-                    {/* {data.shots
-                        .slice(0, 5)
-                        .reverse()
-                        .map((item, index) => (
-                            <div
-                                key={index}
-                                className="min-w-[280px] sm:min-w-[320px] md:min-w-[400px]"
-                            >
-                                <PortfolioCard title={item.title} img={item.images.four_x} />
-                            </div>
-                        ))} */}
                 </div>
             </div>
         </section>

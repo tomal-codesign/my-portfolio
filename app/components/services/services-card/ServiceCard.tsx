@@ -29,17 +29,17 @@ const ServiceCard = (Props: Props) => {
     return (
         <>
             <div className="overflow-hidden relative z-[10] custom-spotlight-card bg-white/40 border border-[#fff]/80 rounded-[46px] backdrop-blur-lg">
-                <div className="lg:p-[40px] !pb-4 p-4">
-                    <h1 className="text-[var(--normal-text)] text-[30px] font-extrabold">{Props.name}</h1>
-                    <p className="pt-1 text-[var(--normal-text)] text-md">{Props.description}</p>
-                    <div className="flex py-4 gap-4">
+                <div className="lg:p-[40px] p-[30px] !pb-4 p-4">
+                    <h1 className="text-[var(--normal-text)] text-[20px] lg:text-[30px] font-extrabold">{Props.name}</h1>
+                    <p className="pt-1 text-[var(--normal-text)] text-sm lg:text-md">{Props.description}</p>
+                    <div className="flex flex-wrap py-4 lg:gap-4 gap-2">
                         {Props.icon?.map((item) => (
                             <div
                                 key={item.id}
-                                className="flex items-center gap-2 custom-spotlight-card bg-white/40 py-2 px-3 border border-[#fff]/80 rounded-[46px] backdrop-blur-lg"
+                                className="flex items-center lg:gap-2 gap-1 custom-spotlight-card bg-white/40 py-2 px-3 border border-[#fff]/80 rounded-[46px] backdrop-blur-lg"
                             >
-                                <Icon width={20} height={20} icon={item.icon} className="text-[var(--normal-text)]" />
-                                <span className="text-[var(--normal-text)] text-sm">{item.name}</span>
+                                <Icon icon={item.icon} className="text-[var(--normal-text)] lg:w-[20px] lg:h-[20px] w-[15px] h-[15px]" />
+                                <span className="text-[var(--normal-text)] text-xs lg:text-sm">{item.name}</span>
                             </div>
                         ))}
                     </div>
@@ -69,13 +69,13 @@ const ServiceCard = (Props: Props) => {
                         {Props.img?.map((item, index) => (
                             <SwiperSlide key={index}>
                                 {item.img && (
-                                    <div className="h-[400px] !rounded-b-[46px]  backdrop-blur-2xl overflow-hidden">
+                                    <div className="lg:h-[400px] h-[300px] !rounded-b-[46px] backdrop-blur-2xl overflow-hidden">
                                         <Image
                                             src={item.img}
                                             alt="Image"
                                             width={1200}
                                             height={800}
-                                            className="w-full h-full object-cover"
+                                            className="w-full h-full object-cover "
                                         />
                                     </div>
                                 )}

@@ -1,5 +1,7 @@
 
 import AboutSection from "./components/about-section/AboutSection";
+import Contact from "./components/contact/Contact";
+import Footer from "./components/footer/Footer";
 import RecentWork from "./components/recent-work/RecentWork";
 import Services from "./components/services/Services";
 import Weapons from "./components/weapons/Weapons";
@@ -13,6 +15,8 @@ export default function Home() {
       <WorkingEducation />
       <Services />
       <RecentWork />
+      <Contact />
+      <Footer />
     </div>
   );
 }
