@@ -16,7 +16,7 @@ const RecentWork = () => {
 
     return (
         <section>
-            <div data-aos="fade-up" className="pb-8 pt-8 px-4 container mx-auto">
+            <div data-aos="fade-up" className="pt-16 px-4 container mx-auto">
                 <h1 className="text-[var(--normal-text)] text-[20px] lg:text-[40px] font-extrabold">
                     Portfolio Highlights
                 </h1>

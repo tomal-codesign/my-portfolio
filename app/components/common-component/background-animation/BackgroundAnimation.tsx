@@ -65,13 +65,8 @@ export default function Iridescence({
   useEffect(() => {
     if (!ctnDom.current) return;
     const ctn = ctnDom.current;
-    let renderer:any;
-    try {
-      renderer = new Renderer();
-    } catch (err) {
-      console.error("Failed to create WebGL renderer:", err);
-      return;  // exit effect if can't create renderer
-    } const gl = renderer.gl;
+    const renderer = new Renderer();
+    const gl = renderer.gl;
     gl.clearColor(1, 1, 1, 1);
 
     let program: Program;
@@ -143,7 +138,7 @@ export default function Iridescence({
       gl.getExtension("WEBGL_lose_context")?.loseContext();
     };
   }, [color, speed, amplitude, mouseReact]);
-  // after:bg-[#A6AEBF]/30
+// after:bg-[#A6AEBF]/30
   return (
     <div
       ref={ctnDom}

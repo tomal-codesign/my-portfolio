@@ -5,7 +5,7 @@ import intellier from '../../../public/images/workign-logo.png'
 const WorkingEducation = () => {
     return (
         <>
-            <div className='pt-8'>
+            <div className='pt-16'>
                 <div className='container mx-auto px-4'>
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                         <div data-aos="fade-up" className='custom-spotlight-card bg-white/40 p-[30px] lg:p-[40px] p-4 border border-[#fff]/80 rounded-[46px] backdrop-blur-lg'>

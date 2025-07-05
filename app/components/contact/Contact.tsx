@@ -16,7 +16,7 @@ const Contact = () => {
         setTimeout(() => setCopied(false), 2000); // Reset icon after 2 seconds
     };
     return (
-        <div className="pb-8">
+        <div className="pt-16">
             <div className="container mx-auto px-4">
                 <div data-aos="fade-up" className="custom-spotlight-card bg-[#3E84DE] p-[30px] lg:p-[40px] p-4 rounded-[46px] backdrop-blur-lg flex justify-between items-center">
                     <div className='w-full lg:w-[50%]'>

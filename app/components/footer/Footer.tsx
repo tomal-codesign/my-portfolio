@@ -2,7 +2,7 @@ import SocialButton from "../common-component/social-button/SocialButton"
 
 const Footer = () => {
     return (
-        <div className="pb-8">
+        <div className="pb-8 pt-16">
             <div className="container mx-auto px-4">
                 <div data-aos="fade-up" className="custom-spotlight-card bg-white/40 p-[30px] lg:p-[40px] lg:pb-[26px] pt-[16px]  border border-[#fff]/80 rounded-[46px] backdrop-blur-lg flex flex-col items-center">
                     <h2 className="text-[var(--normal-text)] text-[26px] font-semibold">Let's Connect On</h2>
