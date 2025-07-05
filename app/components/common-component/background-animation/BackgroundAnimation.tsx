@@ -65,8 +65,13 @@ export default function Iridescence({
   useEffect(() => {
     if (!ctnDom.current) return;
     const ctn = ctnDom.current;
-    const renderer = new Renderer();
-    const gl = renderer.gl;
+    let renderer:any;
+    try {
+      renderer = new Renderer();
+    } catch (err) {
+      console.error("Failed to create WebGL renderer:", err);
+      return;  // exit effect if can't create renderer
+    } const gl = renderer.gl;
     gl.clearColor(1, 1, 1, 1);
 
     let program: Program;
