@@ -138,7 +138,7 @@ export default function Iridescence({
       gl.getExtension("WEBGL_lose_context")?.loseContext();
     };
   }, [color, speed, amplitude, mouseReact]);
-// after:bg-[#A6AEBF]/30
+  // after:bg-[#A6AEBF]/30
   return (
     <div
       ref={ctnDom}

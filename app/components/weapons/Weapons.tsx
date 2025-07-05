@@ -9,12 +9,12 @@ type props = {
 const Weapons = ({ className }: props) => {
     return (
         <>
-            <div className={`pt-8 ${className}`}>
+            <div data-aos="fade-up" className={`pt-8 ${className}`}>
                 <div className="container mx-auto px-4">
                     <div className='custom-spotlight-card bg-white/40 p-[30px] lg:p-[40px] p-4 border border-[#fff]/80 rounded-[46px] backdrop-blur-lg'>
                         <h1 className="text-[var(--normal-text)] text-[20px] lg:text-[40px] font-extrabold">My Weapons Power</h1>
-                        <p className="pt-1 text-[var(--normal-text)] text-sm lg:text-md">Mastering both design aesthetics and frontend functionality with a refined toolset.</p>
-                        <div className='flex flex-wrap lg:pt-10 pt-3 lg:pt-6 justify-center'>
+                        <p className="pt-1 text-[var(--normal-text)] text-sm lg:text-base xl:text-base md:text-base">Mastering both design aesthetics and frontend functionality with a refined toolset.</p>
+                        <div className='flex flex-wrap lg:pt-4 pt-3 lg:pt-6 justify-center'>
                             <WeaponCard className='lg:w-1/7 md:w-1/3 w-1/2 p-1.5 lg:p-3' spotlightColor="rgba(219, 69, 60, 0.3)" icon="material-icon-theme:figma" text="Figma" />
                             <WeaponCard className='lg:w-1/7 md:w-1/3 w-1/2 p-1.5 lg:p-3' spotlightColor="rgba(52, 137, 255, 0.3)" icon="devicon:photoshop" text="Photoshop" />
                             <WeaponCard className='lg:w-1/7 md:w-1/3 w-1/2 p-1.5 lg:p-3' spotlightColor="rgba(209, 83, 80, 0.3)" icon="vscode-icons:file-type-html" text="HTML" />

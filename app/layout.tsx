@@ -5,6 +5,7 @@ import "./globals.scss";
 import Menu from "./components/menu/Menu";
 import CanvasAnimation from "./components/CanvasAnimation/CanvasAnimation";
 import BackgroundAnimation from "./components/common-component/background-animation/BackgroundAnimation";
+import AOSInit from "./components/aos-init/AOSInit";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,14 +32,15 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <AOSInit />
         <Menu />
         {children}
         <BackgroundAnimation
-        color={[1, 1, 1]}
-        mouseReact={true}
-        amplitude={0.1}
-        speed={1.0}
-      />
+          color={[1, 1, 1]}
+          mouseReact={true}
+          amplitude={0.1}
+          speed={1.0}
+        />
         {/* <CanvasAnimation /> */}
       </body>
     </html>

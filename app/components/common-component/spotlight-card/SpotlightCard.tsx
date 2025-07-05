@@ -48,6 +48,7 @@ const SpotlightCard: React.FC<SpotlightCardProps> = ({
 
     return (
         <div
+            data-aos="fade-up"
             ref={divRef}
             onMouseMove={handleMouseMove}
             onFocus={handleFocus}

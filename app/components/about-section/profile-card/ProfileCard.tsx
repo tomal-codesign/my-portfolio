@@ -10,8 +10,8 @@ type props = {
 const ProfileCard = ({ classNameprops }: props) => {
     return (
         <>
-            <SpotlightCard className={`${classNameprops} custom-spotlight-card bg-white/40 p-[30px] lg:p-[40px] border border-[#fff]/80 rounded-[46px] backdrop-blur-lg`} spotlightColor="rgba(67, 0, 255, 0.3)">
-                <div className="flex flex-col gap-4 w-full items-center relative z-10">
+            <SpotlightCard  className={`${classNameprops} custom-spotlight-card bg-white/40 p-[30px] lg:p-[40px] border border-[#fff]/80 rounded-[46px] backdrop-blur-lg`} spotlightColor="rgba(67, 0, 255, 0.3)">
+                <div  className="flex flex-col gap-4 w-full items-center relative z-10">
                     <div>
                         <Image className="rounded-full " src={ProfileImg} width={250} height={250} alt="profile" />
                     </div>

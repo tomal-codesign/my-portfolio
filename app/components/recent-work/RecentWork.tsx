@@ -16,11 +16,11 @@ const RecentWork = () => {
 
     return (
         <section>
-            <div className="pb-8 pt-8 px-4 container mx-auto">
+            <div data-aos="fade-up" className="pb-8 pt-8 px-4 container mx-auto">
                 <h1 className="text-[var(--normal-text)] text-[20px] lg:text-[40px] font-extrabold">
                     Portfolio Highlights
                 </h1>
-                <p className="pt-1 text-[var(--normal-text)] text-sm lg:text-md">
+                <p className="pt-1 text-[var(--normal-text)] text-sm lg:text-base xl:text-base md:text-base">
                     A collection of ideas brought to life through craft.
                 </p>
                 <div className="lg:pt-8 pt-4">
@@ -35,9 +35,11 @@ const RecentWork = () => {
                             },
                             768: {
                                 slidesPerView: 2,
+                                spaceBetween: 26,
                             },
                             1024: {
                                 slidesPerView: 3,
+                                spaceBetween: 26,
                             },
                         }}
                         className="mySwiper">

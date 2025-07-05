@@ -18,10 +18,10 @@ const Contact = () => {
     return (
         <div className="pb-8">
             <div className="container mx-auto px-4">
-                <div className="custom-spotlight-card bg-[#3E84DE] p-[30px] lg:p-[40px] p-4 rounded-[46px] backdrop-blur-lg flex justify-between items-center">
+                <div data-aos="fade-up" className="custom-spotlight-card bg-[#3E84DE] p-[30px] lg:p-[40px] p-4 rounded-[46px] backdrop-blur-lg flex justify-between items-center">
                     <div className='w-full lg:w-[50%]'>
                         <h2 className="text-[#fff] text-[20px] lg:text-[40px] font-extrabold">Just one step away from connecting with me—anytime, anywhere</h2>
-                        <p className="pt-4 text-[#fff] text-sm lg:text-md">Have a creative idea you want to bring to life with standout design? I'm here to understand your vision and craft something meaningful and visually impactful. Let’s collaborate and make your project a success with creativity, precision, and trust.</p>
+                        <p className="pt-4 text-[#fff] text-sm lg:text-base xl:text-base md:text-base">Have a creative idea you want to bring to life with standout design? I'm here to understand your vision and craft something meaningful and visually impactful. Let’s collaborate and make your project a success with creativity, precision, and trust.</p>
                         <div className="pt-4 pb-4 text-[#fff] text-md font-bold flex flex-col lg:flex-row gap-1">Message sent via email:
                             <div className="border border-white/20 font-normal rounded-md pl-3 pr-2 py-1 inline-flex items-center gap-3 mt-2 w-fit">
                                 <a href={`mailto:${email}`} className="text-white">

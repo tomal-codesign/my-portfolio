@@ -28,10 +28,10 @@ type Props = {
 const ServiceCard = (Props: Props) => {
     return (
         <>
-            <div className="overflow-hidden relative z-[10] custom-spotlight-card bg-white/40 border border-[#fff]/80 rounded-[46px] backdrop-blur-lg">
+            <div data-aos="fade-up" className="overflow-hidden relative z-[10] custom-spotlight-card bg-white/40 border border-[#fff]/80 rounded-[46px] backdrop-blur-lg">
                 <div className="lg:p-[40px] p-[30px] !pb-4 p-4">
                     <h1 className="text-[var(--normal-text)] text-[20px] lg:text-[30px] font-extrabold">{Props.name}</h1>
-                    <p className="pt-1 text-[var(--normal-text)] text-sm lg:text-md">{Props.description}</p>
+                    <p className="pt-1 text-[var(--normal-text)] text-sm lg:text-base xl:text-base md:text-base">{Props.description}</p>
                     <div className="flex flex-wrap py-4 lg:gap-4 gap-2">
                         {Props.icon?.map((item) => (
                             <div

@@ -22,10 +22,10 @@ const EducationCard = ({ icon, designation, company, duration }: props) => {
                     <div>
                         <div className='flex flex-col gap-1'>
                             <h2 className="text-[var(--normal-text)] text-md lg:text-lg font-medium">{designation}</h2>
-                            <p className='text-[var(--normal-text)] text-sm lg:text-md'>{company}</p>
+                            <p className='text-[var(--normal-text)] text-sm lg:text-base xl:text-base md:text-base'>{company}</p>
                         </div>
                         <div>
-                            <p className='text-[var(--normal-text)] text-sm lg:text-md'>{duration}</p>
+                            <p className='text-[var(--normal-text)] text-sm lg:text-base xl:text-base md:text-base'>{duration}</p>
                         </div>
                     </div>
                 </div>

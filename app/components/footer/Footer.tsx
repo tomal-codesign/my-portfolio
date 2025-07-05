@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <div className="pb-8">
             <div className="container mx-auto px-4">
-                <div className="custom-spotlight-card bg-white/40 p-[30px] lg:p-[40px] lg:pb-[26px] pt-[16px]  border border-[#fff]/80 rounded-[46px] backdrop-blur-lg flex flex-col items-center">
+                <div data-aos="fade-up" className="custom-spotlight-card bg-white/40 p-[30px] lg:p-[40px] lg:pb-[26px] pt-[16px]  border border-[#fff]/80 rounded-[46px] backdrop-blur-lg flex flex-col items-center">
                     <h2 className="text-[var(--normal-text)] text-[26px] font-semibold">Let's Connect On</h2>
                     <div className="flex gap-4 items-center py-6" >
                         <SocialButton textHidenMobile={true} icon='bxl:facebook' iconColor="bg-[#1877f2]" hoverColor='hover:bg-[#1877f2]' text='Facebook' link='https://www.facebook.com/' />
