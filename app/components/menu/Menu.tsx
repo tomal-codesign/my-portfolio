@@ -6,6 +6,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import ProfileImg from "../../../public/images/profile-img.jpg";
 import SocialButton from "../common-component/social-button/SocialButton";
+import { Icon } from "@iconify/react/dist/iconify.js";
 
 const MAX_SCROLL = 300; // changed to 300px
 const MIN_WIDTH_PERCENT = 70;
@@ -63,7 +64,7 @@ const Menu = () => {
 
     return (
         <div
-            className="sticky top-0 z-[100] w-full py-2"
+            className="sticky top-0 z-[100] w-full pt-6"
         >
             <div className="container px-4 mx-auto">
                 <div ref={headerRef} className="bg-white/40 backdrop-blur-lg border border-white/80  rounded-full mx-auto">
@@ -83,17 +84,18 @@ const Menu = () => {
                         <div className="col-span-3 flex justify-center items-center">
                             <ul className="flex gap-2">
                                 {[
-                                    { href: "/", label: "Home" },
-                                    { href: "/about", label: "About" },
-                                    { href: "/services", label: "Services" },
-                                    { href: "/portfolio", label: "Portfolio" },
+                                    { href: "/", label: "Home", icon: "heroicons:home" },
+                                    { href: "/about", label: "About" , icon: "fluent:people-search-20-regular"},
+                                    { href: "/services", label: "Services", icon: "ic:baseline-home" },
+                                    { href: "/portfolio", label: "Portfolio", icon: "ic:baseline-home" },
                                 ].map(({ href, label }) => (
                                     <li key={href}>
                                         <Link
                                             href={href}
-                                            className={`px-5 py-2 rounded-full transition-all duration-200 ${pathname === href ? "bg-[#3E84DE] text-white" : ""
+                                            className={`px-5 py-2 rounded-full transition-all duration-200 flex items-center gap-2 ${pathname === href ? "bg-[#3E84DE] text-white" : ""
                                                 }`}
                                         >
+                                            <Icon icon="ic:baseline-home" width="24" height="24" />
                                             {label}
                                         </Link>
                                     </li>

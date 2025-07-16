@@ -1,15 +1,9 @@
 "use client";
 import { Icon } from '@iconify/react/dist/iconify.js'
 import ServiceCard from './services-card/ServiceCard'
-import UIUX1 from '../../../public/images/services/uiux-1.jpg'
-import UIUX2 from '../../../public/images/services/uiux-2.jpg'
-import UIUX3 from '../../../public/images/services/uiux-3.jpg'
-import WebDesign1 from '../../../public/images/services/webdesign-1.jpg'
-import WebDesign2 from '../../../public/images/services/webdesign-2.jpg'
-import WebDesign3 from '../../../public/images/services/webdesign-3.jpg'
-import FrontEnd1 from '../../../public/images/services/front-end-1.jpg'
-import FrontEnd2 from '../../../public/images/services/front-end-2.jpg'
-import FrontEnd3 from '../../../public/images/services/front-end-3.jpg'
+import UIUX from '../../../public/images/services/uiux-1.jpg'
+import WebDesign from '../../../public/images/services/webdesign-2.jpg'
+import FrontEnd from '../../../public/images/services/front-end-1.jpg'
 const ServiceData = [
     {
         id: 1,
@@ -27,23 +21,7 @@ const ServiceData = [
                 name: 'Photoshop'
             },
         ],
-        img: [
-            {
-                id: 1,
-                type: "img",
-                img: UIUX1
-            },
-            {
-                id: 2,
-                type: "img",
-                img: UIUX2
-            },
-            {
-                id: 3,
-                type: "img",
-                img: UIUX3
-            }
-        ]
+        img: UIUX
     },
     {
         id: 2,
@@ -71,23 +49,7 @@ const ServiceData = [
                 name: 'Tailwind'
             },
         ],
-        img: [
-            {
-                id: 1,
-                type: "img",
-                img: WebDesign1
-            },
-            {
-                id: 2,
-                type: "img",
-                img: WebDesign2
-            },
-            {
-                id: 3,
-                type: "img",
-                img: WebDesign3
-            }
-        ]
+        img: WebDesign
     },
     {
         id: 3,
@@ -115,23 +77,7 @@ const ServiceData = [
                 name: 'Angular'
             },
         ],
-        img: [
-            {
-                id: 1,
-                type: "img",
-                img: FrontEnd1
-            },
-            {
-                id: 2,
-                type: "img",
-                img: FrontEnd2
-            },
-            {
-                id: 3,
-                type: "img",
-                img: FrontEnd3
-            }
-        ]
+        img: FrontEnd
     }
 ]
 
@@ -142,7 +88,7 @@ const Services = () => {
             <div className='pt-16'>
                 <div className='container mx-auto px-4'>
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                        <div className='custom-spotlight-card rounded-[46px] backdrop-blur-lg lg:sticky top-[40px] left-0 lg:h-[300px] h-auto lg:pr-[100px]'>
+                        <div className='custom-spotlight-card rounded-[46px] backdrop-blur-lg lg:sticky top-[100px] left-0 lg:h-[300px] h-auto lg:pr-[100px]'>
                             <h1 className="text-[var(--normal-text)] text-[20px] lg:text-[40px] font-extrabold">My Eyes to do</h1>
                             <p className="pt-1 text-[var(--normal-text)] text-sm lg:text-base xl:text-base md:text-base">An Addicted, Specialized, and Qualified to build UI/UX design for website  and mobile applications (Dealing with the front end part). I always work with the need to understand the benefits of the users, give them  something new to enjoy, and come close to new expectations in advance.</p>
                         </div>

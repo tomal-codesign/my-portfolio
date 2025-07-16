@@ -18,11 +18,7 @@ type Props = {
         icon: string;
         name: string;
     }[];
-    img: {
-        id: number;
-        type: string;
-        img?: any;
-    }[];
+    img: any
 };
 
 const ServiceCard = (Props: Props) => {
@@ -47,41 +43,8 @@ const ServiceCard = (Props: Props) => {
 
                 {/* Custom Swiper Navigation Buttons */}
 
-                <div className='relative'>
-                    <div className="absolute top-1/2 -translate-y-1/2 left-4 z-20 swiper-button-prev-custom cursor-pointer bg-white/60 backdrop-blur-lg p-2 rounded-full backdrop-blur-sm">
-                        <Icon icon="iconamoon:arrow-left-2-light" width={28} height={28} />
-                    </div>
-                    <div className="absolute top-1/2 -translate-y-1/2 right-4 z-20 swiper-button-next-custom cursor-pointer bg-white/60 backdrop-blur-lg p-2 rounded-full backdrop-blur-sm">
-                        <Icon icon="iconamoon:arrow-right-2-light" width={28} height={28} />
-                    </div>
-                    <Swiper
-                        navigation={{
-                            nextEl: '.swiper-button-next-custom',
-                            prevEl: '.swiper-button-prev-custom',
-                        }}
-                        modules={[Navigation, Autoplay]}
-                        autoplay={{
-                            delay: 2500,
-                            disableOnInteraction: false,
-                        }}
-                        className="mySwiper"
-                    >
-                        {Props.img?.map((item, index) => (
-                            <SwiperSlide key={index}>
-                                {item.img && (
-                                    <div className="lg:h-[400px] h-[300px] !rounded-b-[46px] backdrop-blur-2xl overflow-hidden">
-                                        <Image
-                                            src={item.img}
-                                            alt="Image"
-                                            width={1200}
-                                            height={800}
-                                            className="w-full h-full object-cover "
-                                        />
-                                    </div>
-                                )}
-                            </SwiperSlide>
-                        ))}
-                    </Swiper>
+                <div className='relative left-[40px] w-full h-[200px] lg:h-[400px] rounded-tl-[30px] overflow-hidden'>
+                    <Image src={Props.img} width={800} height={600} alt="Image" />
                 </div>
             </div>
         </>
