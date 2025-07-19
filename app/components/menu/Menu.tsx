@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import Image from "next/image";
 import Link from "next/link";
@@ -15,6 +15,9 @@ const MAX_WIDTH_PERCENT = 100;
 const Menu = () => {
     const pathname = usePathname();
     const headerRef = useRef<HTMLDivElement>(null);
+    const [windowWidth, setWindowWidth] = useState(
+        typeof window !== "undefined" ? window.innerWidth : 0
+    );
 
     useEffect(() => {
         let ticking = false;
@@ -67,10 +70,10 @@ const Menu = () => {
             className="sticky top-0 z-[100] w-full pt-6"
         >
             <div className="container px-4 mx-auto">
-                <div ref={headerRef} className="bg-white/40 backdrop-blur-lg border border-white/80  rounded-full mx-auto">
-                    <div className="grid grid-cols-5 items-center p-2">
+                <div ref={windowWidth < 1080 ? null : headerRef} className="bg-white/40 backdrop-blur-lg border border-white/80  rounded-full mx-auto lg:w-auto w-fit">
+                    <div className="flex justify-between items-center p-2">
                         {/* Profile image */}
-                        <div className="col-span-1 flex justify-center items-center w-12 h-12 rounded-full overflow-hidden">
+                        <div className="col-span-1 lg:flex md:hidden hidden justify-center items-center w-12 h-12 rounded-full overflow-hidden">
                             <Image
                                 className="object-cover w-full h-full"
                                 src={ProfileImg}
@@ -84,19 +87,19 @@ const Menu = () => {
                         <div className="col-span-3 flex justify-center items-center">
                             <ul className="flex gap-2">
                                 {[
-                                    { href: "/", label: "Home", icon: "heroicons:home" },
-                                    { href: "/about", label: "About" , icon: "fluent:people-search-20-regular"},
-                                    { href: "/services", label: "Services", icon: "ic:baseline-home" },
-                                    { href: "/portfolio", label: "Portfolio", icon: "ic:baseline-home" },
-                                ].map(({ href, label }) => (
+                                    { href: "/", label: "Home", icon: "fluent:home-16-regular" },
+                                    { href: "/about", label: "About", icon: "fluent:people-search-20-regular" },
+                                    { href: "/services", label: "Services", icon: "fluent:design-ideas-48-regular" },
+                                    { href: "/portfolio", label: "Portfolio", icon: "akar-icons:dashboard" },
+                                ].map(({ href, label, icon }) => (
                                     <li key={href}>
                                         <Link
                                             href={href}
                                             className={`px-5 py-2 rounded-full transition-all duration-200 flex items-center gap-2 ${pathname === href ? "bg-[#3E84DE] text-white" : ""
                                                 }`}
                                         >
-                                            <Icon icon="ic:baseline-home" width="24" height="24" />
-                                            {label}
+                                            <Icon className="lg:hidden block" icon={icon} width="20" height="20" />
+                                            <span className={`lg:block hidden ${pathname === href ? "!block" : ""}`}>{label}</span>
                                         </Link>
                                     </li>
                                 ))}
@@ -104,7 +107,7 @@ const Menu = () => {
                         </div>
 
                         {/* Theme + CTA */}
-                        <div className="col-span-1 flex justify-end gap-3">
+                        <div className="col-span-1  justify-end gap-3 lg:flex md:hidden hidden">
                             <SocialButton
                                 icon="basil:whatsapp-outline"
                                 iconColor="bg-[#60d669]"
