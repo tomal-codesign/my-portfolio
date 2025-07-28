@@ -65,6 +65,13 @@ const Menu = () => {
         };
     }, []);
 
+    const menuList = [
+        { href: "/", label: "Home", icon: "fluent:home-16-regular" },
+        { href: "/about", label: "About", icon: "fluent:people-search-20-regular" },
+        { href: "/services", label: "Services", icon: "fluent:design-ideas-48-regular" },
+        { href: "/portfolio", label: "Portfolio", icon: "akar-icons:dashboard" },
+    ]
+
     return (
         <div
             className="sticky top-0 z-[100] w-full pt-6"
@@ -84,22 +91,17 @@ const Menu = () => {
                         </div>
 
                         {/* Nav */}
-                        <div className="col-span-3 flex justify-center items-center">
-                            <ul className="flex gap-2">
-                                {[
-                                    { href: "/", label: "Home", icon: "fluent:home-16-regular" },
-                                    { href: "/about", label: "About", icon: "fluent:people-search-20-regular" },
-                                    { href: "/services", label: "Services", icon: "fluent:design-ideas-48-regular" },
-                                    { href: "/portfolio", label: "Portfolio", icon: "akar-icons:dashboard" },
-                                ].map(({ href, label, icon }) => (
-                                    <li key={href}>
+                        <div className="col-span-3 flex justify-center items-center lg:w-auto md:w-auto md:ms-auto lg:m-0  w-full">
+                            <ul className="flex justify-between gap-0 lg:w-auto md:w-auto w-full">
+                                {menuList.map(({ href, label, icon }) => (
+                                    <li key={href} className="flex align-center">
                                         <Link
                                             href={href}
-                                            className={`px-5 py-2 rounded-full transition-all duration-200 flex items-center gap-2 ${pathname === href ? "bg-[#3E84DE] text-white" : ""
+                                            className={`lg:px-5 px-4 py-2 rounded-full transition-all duration-200 flex items-center gap-2 ${pathname === href ? "bg-[#3E84DE] text-white" : ""
                                                 }`}
                                         >
-                                            <Icon className="lg:hidden block" icon={icon} width="20" height="20" />
-                                            <span className={`lg:block hidden ${pathname === href ? "!block" : ""}`}>{label}</span>
+                                            <Icon className="lg:hidden block" icon={icon} width="14" height="14" />
+                                            <span className={`lg:block lg:text-sm text-[13px] hidden ${pathname === href ? "!block" : ""}`}>{label}</span>
                                         </Link>
                                     </li>
                                 ))}
