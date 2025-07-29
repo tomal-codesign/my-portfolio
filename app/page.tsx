@@ -16,8 +16,8 @@ export default function Home() {
       <WorkingEducation />
       <Services />
       <RecentWork />
-      <Contact />
-      <Footer />
+      
+      
     </div>
   );
 }

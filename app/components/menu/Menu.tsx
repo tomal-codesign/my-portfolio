@@ -67,9 +67,9 @@ const Menu = () => {
 
     const menuList = [
         { href: "/", label: "Home", icon: "fluent:home-16-regular" },
-        { href: "/about", label: "About", icon: "fluent:people-search-20-regular" },
-        { href: "/services", label: "Services", icon: "fluent:design-ideas-48-regular" },
-        { href: "/portfolio", label: "Portfolio", icon: "akar-icons:dashboard" },
+        { href: "/pages/about", label: "About", icon: "fluent:people-search-20-regular" },
+        { href: "/pages/services", label: "Services", icon: "fluent:design-ideas-48-regular" },
+        { href: "/pages/portfolio", label: "Portfolio", icon: "akar-icons:dashboard" },
     ]
 
     return (
