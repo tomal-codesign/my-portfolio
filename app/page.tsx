@@ -16,8 +16,6 @@ export default function Home() {
       <WorkingEducation />
       <Services />
       <RecentWork />
-      
-      
     </div>
   );
 }

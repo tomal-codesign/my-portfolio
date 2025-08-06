@@ -97,11 +97,11 @@ const Menu = () => {
                                     <li key={href} className="flex align-center">
                                         <Link
                                             href={href}
-                                            className={`lg:px-5 px-4 py-2 rounded-full transition-all duration-200 flex items-center gap-2 ${pathname === href ? "bg-[#3E84DE] text-white" : ""
+                                            className={`lg:px-5 px-4 py-2 rounded-full transition-all duration-200 flex items-center gap-2 ${pathname === href ? "bg-[#3E84DE] text-white" : "hover:bg-white/60"
                                                 }`}
                                         >
                                             <Icon className="lg:hidden block" icon={icon} width="14" height="14" />
-                                            <span className={`lg:block lg:text-sm text-[13px] hidden ${pathname === href ? "!block" : ""}`}>{label}</span>
+                                            <span className={`lg:block lg:text-[16px] text-[13px] hidden ${pathname === href ? "!block" : ""}`}>{label}</span>
                                         </Link>
                                     </li>
                                 ))}
