@@ -92,7 +92,7 @@ const Menu = () => {
 
                         {/* Nav */}
                         <div className="col-span-3 flex justify-center items-center lg:w-auto md:w-auto md:ms-auto lg:m-0  w-full">
-                            <ul className="flex justify-between gap-0 lg:w-auto md:w-auto w-full">
+                            <ul className="flex justify-between gap-2 lg:w-auto md:w-auto w-full">
                                 {menuList.map(({ href, label, icon }) => (
                                     <li key={href} className="flex align-center">
                                         <Link
@@ -115,7 +115,7 @@ const Menu = () => {
                                 iconColor="bg-[#60d669]"
                                 hoverColor="hover:!bg-[#60d669] !bg-[#60d669] text-white"
                                 text="Let's Talk"
-                                link="tel:+880123456789"
+                                link="https://wa.me/8801737746673"
                             />
                         </div>
                     </div>

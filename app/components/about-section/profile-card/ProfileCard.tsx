@@ -23,10 +23,10 @@ const ProfileCard = ({ classNameprops }: props) => {
                         </div>
                     </div>
                     <div className="flex gap-4 items-center" >
-                        <SocialButton textHidenMobile={true} icon='bxl:facebook' iconColor="bg-[#1877f2]" hoverColor='hover:bg-[#1877f2]' text='Facebook' link='https://www.facebook.com/' />
-                        <SocialButton textHidenMobile={true} icon='bxl:github' iconColor="bg-[#000]" hoverColor='hover:bg-[#000]' text='Github' link='https://github.com/' />
-                        <SocialButton textHidenMobile={true} icon='bxl:dribbble' iconColor="bg-[#ea4c89]" hoverColor='hover:bg-[#ea4c89]' text='Dribbble' link='https://dribbble.com/' />
-                        <SocialButton textHidenMobile={true} icon='la:linkedin-in' iconColor="bg-[#0a66c2]" hoverColor='hover:bg-[#0a66c2]' text='Linkedin' link='https://www.linkedin.com/' />
+                        <SocialButton textHidenMobile={true} icon='bxl:facebook' iconColor="bg-[#1877f2]" hoverColor='hover:bg-[#1877f2]' text='Facebook' link='https://www.facebook.com/tomalcodesign/' />
+                        <SocialButton textHidenMobile={true} icon='bxl:github' iconColor="bg-[#000]" hoverColor='hover:bg-[#000]' text='Github' link='https://github.com/tomal-codesign' />
+                        <SocialButton textHidenMobile={true} icon='bxl:dribbble' iconColor="bg-[#ea4c89]" hoverColor='hover:bg-[#ea4c89]' text='Dribbble' link='https://dribbble.com/tomal-codesign' />
+                        <SocialButton textHidenMobile={true} icon='la:linkedin-in' iconColor="bg-[#0a66c2]" hoverColor='hover:bg-[#0a66c2]' text='Linkedin' link='https://www.linkedin.com/in/tomal-codesign/' />
                     </div>
                 </div>
             </SpotlightCard>

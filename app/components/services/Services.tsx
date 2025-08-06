@@ -85,7 +85,7 @@ const ServiceData = [
 const Services = () => {
     return (
         <div>
-            <div className='pt-16'>
+            <div className='pt-10'>
                 <div className='container mx-auto px-4'>
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                         <div className='custom-spotlight-card rounded-[46px] backdrop-blur-lg lg:sticky top-[100px] left-0 lg:h-[300px] h-auto lg:pr-[100px]'>

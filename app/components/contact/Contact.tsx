@@ -45,7 +45,7 @@ const Contact = () => {
                         </div>
 
                         <div className="flex gap-4">
-                            <SocialButton icon='basil:whatsapp-outline' iconColor="bg-[#60d669]" hoverColor='hover:!bg-[#60d669] !bg-[#fff]/30 text-white' text='Connect with WhatsApp' link='tel:+880123456789' />
+                            <SocialButton icon='basil:whatsapp-outline' iconColor="bg-[#60d669]" hoverColor='hover:!bg-[#60d669] !bg-[#fff]/30 text-white' text='Connect with WhatsApp' link='https://wa.me/8801737746673' />
                         </div>
                     </div>
                     <div className="hidden lg:block">

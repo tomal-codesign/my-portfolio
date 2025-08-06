@@ -1,7 +1,7 @@
 'use client';
 
 import PortfolioCard from '../portfolio-card/PortfolioCard';
-import data from '../../data/export.json';
+import { portfolioData } from '../../data/portfolioData';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -43,12 +43,14 @@ const RecentWork = () => {
                             },
                         }}
                         className="mySwiper">
-                        {data.shots
+                        {portfolioData
                             .slice(0, 5)
                             .reverse()
                             .map((item, index) => (
                                 <SwiperSlide key={index}>
-                                    <PortfolioCard title={item.title} img={item.images.four_x} />
+                                    <a href={item.link} key={index} target="_blank" rel="noopener noreferrer">
+                                        <PortfolioCard title={item.title} img={item.images} />
+                                    </a>
                                 </SwiperSlide>
                             ))}
                     </Swiper>

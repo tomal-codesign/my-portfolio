@@ -1,4 +1,4 @@
-export const shotsFormatted = [
+export const portfolioData = [
     {
         title: "Personal Portfolio Website Design UI",
         images: "https://cdn.dribbble.com/userupload/4970842/file/original-eb85c6b53cb5f61af214ea952c111ee4.png?resize=1600x1200",
