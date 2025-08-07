@@ -13,7 +13,7 @@ const page = () => {
           A collection of ideas brought to life through craft.
         </p>
       </div>
-      <div className='pt-10 container mx-auto px-4'>
+      <div data-aos="fade-up"  className='pt-10 container mx-auto px-4'>
         <div className='grid grid-cols-1 lg:grid-cols-3 gap-6'>
           {portfolioData.map((item, index) => {
             return (
